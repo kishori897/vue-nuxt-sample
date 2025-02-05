@@ -1,0 +1,14 @@
+import dayjs from "dayjs"
+import relativeTime from "dayjs/plugin/relativeTime"
+import duration from "dayjs/plugin/duration"
+
+export default defineNuxtPlugin((_) => {
+  dayjs.extend(relativeTime)
+  dayjs.extend(duration)
+
+  return {
+    provide: {
+      dayjs,
+    },
+  }
+})

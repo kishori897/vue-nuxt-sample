@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Inter-Regular.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Inter-Italic.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Inter-Medium.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Inter-MediumItalic.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Inter-SemiBold.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Inter-SemiBoldItalic.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Inter-Bold.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Inter-BoldItalic.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/Inter-ExtraBold.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/Inter-ExtraBoldItalic.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/Inter-Black.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/Inter-BlackItalic.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/InterDisplay-Regular.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/InterDisplay-Medium.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/InterDisplay-SemiBold.woff2?v=4.0") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/InterDisplay-Bold.woff2?v=4.0") format("woff2");
+}
+
+html {
+  @apply text-gray-900;
+
+  -webkit-font-smoothing: antialiased;
+  background: #f9f9fa url("~/assets/illustration.png") repeat;
+  background-size: 30%;
+  font-size: 14px;
+  font-feature-settings: "ss01", "cv05", "calt";
+
+  @media (min-width: 640px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 2560px) {
+    font-size: 22px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter Display", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  @apply text-4xl;
+
+  line-height: 1.1;
+}
+
+h2 {
+  @apply text-xl font-medium;
+}
+
+h3 {
+  @apply text-lg font-medium;
+}
+
+b,
+strong {
+  @apply font-semibold;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.a-pulse {
+  animation: pulse 1.5s infinite;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader12 {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1rem;
+  clip-path: inset(0 3ch 0 0);
+  animation: l5 0.8s steps(11) infinite;
+}
+.loader12:before {
+  content: "Loading...";
+}
+@keyframes l5 {
+  to {
+    clip-path: inset(0 -1ch 0 0);
+  }
+}
