@@ -1,38 +1,22 @@
-## Setup
+This code is of the shortlisting practise module. In this code, the user can be redirected from sources and take tests, assessments and practise runs for variyng third party provider intergrations.
 
-Make sure to install the dependencies:
+Project follows strict nuxt coding standards with folder structure as follows:
 
-```bash
-yarn install
-```
+/vue-nuxt-sample
+│── /components       # Reusable Vue components  
+│── /layouts          # Application-wide layouts  
+│── /pages            # Nuxt.js pages & routing 
+|── /plugins          # Additional plugins used 
+|── /public           # Project based public assets 
+|── /utils            # Nuxt code utilities  
+│── /stores           # Vuex state management  
+│── /api              # Server-side API endpoints  
+│── /middleware       # Authentication & authorization middleware  
+│── /assets           # Static assets (icons, images, styles)  
+│── nuxt.config.js    # Nuxt.js configuration  
+│── package.json      # Dependencies and scripts  
+│── README.md         # Project documentation  
+...
 
-## Development Server
 
-```bash
-# yarn
-yarn run dev
-```
-
-## Production
-
-```bash
-# yarn
-yarn run build
-```
-
-## Tips and Tricks
-
-```bash
-# Get all ENVs
-heroku config
-
-# Get Single ENV
-heroku config:get GITHUB_USERNAME
-
-# Add new Env to heroku
-heroku config:set GITHUB_USERNAME=joesmith
-
-# Remove an ENV
-heroku config:unset GITHUB_USERNAME
-
-```
+This also includes vitest configurations for testing of the application modules.
