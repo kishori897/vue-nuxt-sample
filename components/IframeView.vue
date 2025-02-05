@@ -4,7 +4,7 @@
       <errorFallback
         v-if="isErrorLoadingUrl"
         err-msg="Please try again"
-        mail="support@shortlister.com"
+        mail="support@sample.com"
       />
       <object
         v-else

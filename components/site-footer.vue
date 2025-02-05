@@ -9,15 +9,15 @@
     <nav :class="$style.Nav">
       <ul>
         <li>
-          <a href="https://shortlist.me/privacy/dataprocessor" target="_blank"
+          <a href="https://sample.me/privacy/dataprocessor" target="_blank"
             >Privacy</a
           >
         </li>
         <li>
-          <a href="https://app.shortlister.com/terms" target="_blank">Terms</a>
+          <a href="https://app.sample.com/terms" target="_blank">Terms</a>
         </li>
         <li>
-          <a href="https://support.shortlister.com/" target="_blank">Help</a>
+          <a href="https://support.sample.com/" target="_blank">Help</a>
         </li>
       </ul>
     </nav>

@@ -18,7 +18,7 @@ export interface Application {
   invited_at: string
   responded_at: null | string
   rejected_at: null | string
-  shortlisted_at: null | string
+  sampleed_at: null | string
   onhold: boolean
   invitation_failed: boolean
   reviewed_by: null | string
@@ -45,7 +45,7 @@ export interface Job {
   event: any // TODO: update with actual event type
   // eslint-disable-next-line  @typescript-eslint/no-explicit-any
   competencies: any[]
-  shortlisted: boolean
+  sampleed: boolean
   is_editing: boolean
   applications: string
   questions: string

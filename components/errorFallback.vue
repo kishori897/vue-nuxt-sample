@@ -11,7 +11,7 @@
         <a
           v-show="props.mail"
           style="color: #e83c46"
-          href="mailto:support@shortlister.com"
+          href="mailto:support@sample.com"
         >
           Contact us</a
         >

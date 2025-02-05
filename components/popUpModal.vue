@@ -25,7 +25,7 @@
                                 and how it may be used. Please review it `
                 }}
                 <a
-                  href="https://shortlist.me/privacy/dataprocessor"
+                  href="https://sample.me/privacy/dataprocessor"
                   target="_blank"
                   >here</a
                 >.

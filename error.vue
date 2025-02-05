@@ -53,7 +53,7 @@
             contact
             <a
               href="mailto:
-            support@shortlister.com"
+            support@sample.com"
               >Support</a
             >
           </p>

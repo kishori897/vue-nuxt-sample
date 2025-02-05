@@ -10,10 +10,10 @@ export default defineNuxtConfig({
       title: "Your assessment",
       titleTemplate: (title) => {
         if (title) {
-          return `${title} | Shortlister`
+          return `${title} | sample`
         }
 
-        return "Shortlister"
+        return "sample"
       },
       meta: [
         { charset: "utf-8" },

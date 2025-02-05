@@ -15,7 +15,7 @@
         </p>
         <p>
           If you're having technical issues, please visit our
-          <a href="https://support.shortlister.com/">technical help page</a>
+          <a href="https://support.sample.com/">technical help page</a>
           for assistance.
         </p>
       </IslandContainer>

@@ -19,7 +19,7 @@ describe("YourComponent", () => {
   it("navigates to the correct URL when privacy link is clicked", async () => {
     const wrapper = shallowMount(YourComponent)
     const privacyLink = wrapper.find(
-      'a[href="https://shortlist.me/privacy/dataprocessor"]',
+      'a[href="https://sample.me/privacy/dataprocessor"]',
     )
 
     // Simulate click event on the privacy link
@@ -32,7 +32,7 @@ describe("YourComponent", () => {
   it("navigates to the correct URL when terms link is clicked", async () => {
     const wrapper = shallowMount(YourComponent)
     const termsLink = wrapper.find(
-      'a[href="https://app.shortlister.com/terms"]',
+      'a[href="https://app.sample.com/terms"]',
     )
 
     // Simulate click event on the terms link
@@ -43,7 +43,7 @@ describe("YourComponent", () => {
 
   it("navigates to the correct URL when help link is clicked", async () => {
     const wrapper = shallowMount(YourComponent)
-    const helpLink = wrapper.find('a[href="https://support.shortlister.com/"]')
+    const helpLink = wrapper.find('a[href="https://support.sample.com/"]')
 
     // Simulate click event on the help link
     await helpLink.trigger("click")
